@@ -2,23 +2,23 @@ package com.web.curation.controller.account;
 
 import javax.validation.Valid;
 
-// import com.web.curation.dao.user.UserDao;
-import com.web.curation.model.BasicResponse;
-import com.web.curation.model.user.SignupRequest;
-// import com.web.curation.model.user.User;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.json.JSONObject;
+// import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.json.JSONObject;
-// import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
 
+// import com.web.curation.dao.user.UserDao;
+import com.web.curation.model.BasicResponse;
+import com.web.curation.model.user.SignupRequest;
+// import com.web.curation.model.user.User;
+
+import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import io.swagger.annotations.ApiOperation;
 
 
 @ApiResponses(value = {
