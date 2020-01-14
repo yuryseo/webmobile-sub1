@@ -1,8 +1,8 @@
 
 <template>
     <div class="user" id="login" >
-        <div class="wrapC">
-            <h1 >로그인을 하고 나면 <br>좋은 일만 있을 거예요.</h1>
+        <div class="wrapC"> <!-- #621582 -->
+            <h1 >로그인을 하고 <br>뉴스피드를 확인하세요!</h1>
 
 
             <div class="input-with-label">
@@ -28,12 +28,17 @@
 
                 </div>
             </div>
+             <div class="wrap">
+                    비밀번호를 잊으셨나요?
+                    <router-link v-bind:to="{name:'FindPassword'}" class="btn--text">비밀번호 찾기</router-link>
+               
+               <br/> </div>
+
             <button class="btn btn--back btn--login" v-on:click="login" :disabled="!isSubmit"
                     :class="{disabled : !isSubmit}">
                 로그인
 
             </button>
-
 
             <div class="sns-login">
                 <div class="text">
@@ -43,20 +48,19 @@
 
                 <kakaoLogin :component="component"/>
                 <GoogleLogin :component="component"/>
+                <NaverLogin :component="component"/>
 
             </div>
             <div class="add-option">
                 <div class="text">
-                    <p>혹시</p>
+                    <p>처음 오셨나요?</p>
                     <div class="bar"></div>
                 </div>
+               
                 <div class="wrap">
-                    <p>비밀번호를 잊으셨나요?</p>
-                    <router-link v-bind:to="{name:'????'}" class="btn--text">비밀번호 찾기</router-link>
-                </div>
-                <div class="wrap">
-                    <p>아직 회원이 아니신가요?</p>
                     <router-link v-bind:to="{name:'Join'}" class="btn--text">가입하기</router-link>
+                
+                    
                 </div>
             </div>
         </div>
@@ -72,12 +76,14 @@
     import * as EmailValidator from 'email-validator';
     import KakaoLogin from '../../components/user/snsLogin/Kakao.vue'
     import GoogleLogin from '../../components/user/snsLogin/Google.vue'
+    import NaverLogin from '../../components/user/snsLogin/Naver.vue'
     import UserApi from '../../apis/UserApi'
 
     export default {
         components: {
             KakaoLogin,
             GoogleLogin,
+            NaverLogin
         },
         created(){
             this.component = this;
@@ -132,7 +138,7 @@
 
                     UserApi.requestLogin(data,res=>{
                         //통신을 통해 전달받은 값 콘솔에 출력
-//                        console.log(res);
+                        console.log(res);
 
                         //요청이 끝나면 버튼 활성화
                         this.isSubmit = true;
