@@ -6,9 +6,9 @@
     min-height: 100%;
     box-sizing: border-box;
     h1 {
-        color:#000;
+        color:#621582;
         font-weight: $f600;
-        margin-bottom: 30px;
+        margin: 30px;
     }
 
     /*로그인*/
@@ -43,11 +43,9 @@
             .bar {
                 width: calc(100% - 100px);
             }
-            .btn--naver, #kakao-login, .google-login {
+             #kakao-login, #naver-login, .google-login {
                 display: inline-block;
-            }
-            #kakao-login {
-                margin: 0 10px;
+                margin: 0 5px;
             }
             #naverIdLogin_loginButton {
                 img {
@@ -59,10 +57,10 @@
         }
         .add-option {
             .bar {
-                width: calc(100% - 40px);
+                width: calc(100% - 100px);
             }
             .wrap {
-                margin-bottom: 10px;
+                margin: 10px;
             }
             p {
                 float: left;

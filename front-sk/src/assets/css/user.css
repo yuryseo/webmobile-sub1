@@ -24,14 +24,14 @@
   box-sizing: border-box;
   /*로그인*/ }
   .user h1 {
-    color: #000;
+    color: #621582;
     font-weight: 600;
-    margin-bottom: 30px; }
+    margin: 30px; }
   .user#login {
     margin-top: 50px; }
     .user#login h1 {
       margin-bottom: 30px;
-      color: #000; }
+      color: #621582; }
     .user#login .btn--login {
       margin-top: 5px; }
     .user#login .text {
@@ -62,7 +62,7 @@
         height: 55px;
         border-radius: 55px; }
     .user#login .add-option .bar {
-      width: calc(100% - 40px); }
+      width: calc(100% - 130px); }
     .user#login .add-option .wrap {
       margin-bottom: 10px; }
     .user#login .add-option p {

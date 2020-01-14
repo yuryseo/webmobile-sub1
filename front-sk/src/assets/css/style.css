@@ -130,7 +130,7 @@ textarea {
   box-sizing: border-box; }
 
 .wrapC {
-  padding: 0 20px;
+  padding: 20px;
   box-sizing: border-box; }
 
 .m30 {
@@ -406,7 +406,7 @@ p {
 
 .btn--back {
   width: 100%;
-  background-color: #000;
+  background-color: #621582;
   border-radius: 3px;
   font-weight: 600;
   box-shadow: none;
@@ -415,7 +415,7 @@ p {
 
 .btn-bottom {
   width: calc(100% - 40px);
-  background: #000;
+  background: #621582;
   color: #fff;
   height: 50px;
   text-align: center;

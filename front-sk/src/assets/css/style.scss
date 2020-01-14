@@ -125,6 +125,7 @@ button {
     border: none;
     font-size: 1em;
     font-weight: 400;
+    color: inherit;
     background-color: transparent;
     outline: none;
     cursor: pointer;
@@ -529,7 +530,7 @@ p {
 
 .btn--back {
     width: $c100;
-    background-color: #000;
+    background-color: #621582;
     border-radius: 3px;
     font-weight: $f600;
     box-shadow: none;
@@ -539,7 +540,7 @@ p {
 
 .btn-bottom {
     width: calc(100% - 40px);
-    background: #000;
+    background: #621582;
     color: #fff;
     height: 50px;
     text-align: center;
@@ -618,6 +619,16 @@ p {
 
 .btn--back-round--red {
     background-color: #F44337;
+    width: $c100;
+    border-radius: 3px;
+    font-weight: $f600;
+    box-shadow: none;
+    height: 50px;
+    line-height: 50px;
+    &.disabled {
+        background: $grey;
+        cursor: default;
+    }
     &:hover {
         background-color: #d92f23;
     }
@@ -644,6 +655,7 @@ p {
 }
 
 .btn--text {
+    padding: 0 30px;
     font:{
         weight: $f600;
     }
