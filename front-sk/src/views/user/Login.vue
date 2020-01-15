@@ -32,7 +32,7 @@
                     비밀번호를 잊으셨나요?
                     <router-link v-bind:to="{name:'FindPassword'}" class="btn--text">비밀번호 찾기</router-link>
                
-               <br/> </div>
+               <br/> <br/> </div>
 
             <button class="btn btn--back btn--login" v-on:click="login" :disabled="!isSubmit"
                     :class="{disabled : !isSubmit}">
@@ -58,8 +58,8 @@
                 </div>
                
                 <div class="wrap">
-                    <router-link v-bind:to="{name:'Join'}" class="btn--text">가입하기</router-link>
-                
+                    <router-link v-bind:to="{name:'Join'}" class="btn--text">회원 가입하기</router-link>
+                    
                     
                 </div>
             </div>
@@ -94,8 +94,6 @@
                 .is().max(100)
                 .has().digits()
                 .has().letters();
-
-
         },
         watch: {
             password: function (v) {
