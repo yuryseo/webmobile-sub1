@@ -46,19 +46,21 @@
                         placeholder="비밀번호를 다시한번 입력하세요."/>
                     <label for="password-confirm">비밀번호 확인</label>
                 </div>
-            </div>
+           
 
-            <label>
-                <input v-model="isTerm" type="checkbox"  id="term"/>
-                <span>약관을 동의합니다.</span>
-            </label>
+                <label>
+                    <input v-model="isTerm" type="checkbox"  id="term"/>
+                    <span>약관을 동의합니다.</span>
+                </label>
 
-            <span @click="termPopup=true" class="btn--text" >약관보기</span>
-            <div class="btn-bottom">
-                <button>
-                    가입하기
-                </button>
-            </div>
+                <span @click="termPopup=true" class="btn--text" >약관보기</span>
+
+                <div class="btn-bottom">
+                    <button>
+                        가입하기
+                    </button>
+                </div>
+             </div>
         </div>
     </div>
 </template>
