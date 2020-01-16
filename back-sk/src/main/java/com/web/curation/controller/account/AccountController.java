@@ -6,6 +6,7 @@ import org.json.JSONObject;
 // import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,17 +28,20 @@ import io.swagger.annotations.ApiResponses;
     @ApiResponse(code = 404, message = "Not Found", response = BasicResponse.class),
     @ApiResponse(code = 500, message = "Failure", response = BasicResponse.class)})
     
+@CrossOrigin(origins = { "*" }, maxAge = 6000)
 @RestController 
 public class AccountController{
     // 디비 셋팅 후 주석을 푸세요.
     // @Autowired
     // UserDao userDao;
-
+	
     @PostMapping("/account/login")
     @ApiOperation(value = "로그인")
     public Object login(@RequestParam(required = true) final String email,
                         @RequestParam(required = true) final String password){
-
+    	
+    	System.out.println(email);
+    	System.out.println(password);
         
         JSONObject dummyUser = new JSONObject();
 
