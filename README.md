@@ -8,13 +8,18 @@
 ### 2. 와이어프레임 작성
 
 - 와이어프레임 초안
-![IMG](front-sk/img/와이어프레임1.PNG)
+
+![IMG](front-sk/img/와이어프레임1.jpg)
+
 - 와이어프레임 수정안
-![IMG](front-sk/img/와이어프레임2.PNG)
+- 
+![IMG](front-sk/img/와이어프레임2.jpg)
 
 ### 3. FrontEnd 화면 
  
 - 커스터 마이징
+- 
+
 ![IMG](front-sk/img/login기본.PNG)
 ![IMG](front-sk/img/login버튼활성화.PNG)
 ![IMG](front-sk/img/login비밀번호오류.PNG)![IMG](front-sk/img/login이메일오류.PNG)
