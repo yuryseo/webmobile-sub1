@@ -7,12 +7,19 @@
 
 ### 2. 와이어프레임 작성
 
+- 와이어프레임 초안
+![IMG](front-sk/images/와이어프레임1.PNG)
+- 와이어프레임 수정안
+![IMG](front-sk/images/와이어프레임2.PNG)
+
 ### 3. FrontEnd 화면 
  
 - 커스터 마이징
+![IMG](front-sk/images/login기본.PNG)
+![IMG](front-sk/images/login버튼활성화.PNG)
+![IMG](front-sk/images/login비밀번호오류.PNG)![IMG](front-sk/images/login이메일오류.PNG)
 
-
-BackEnd에서 로그인 성공/실패 여부 관련 없이로그린 실패 알림(Login.vue)
+BackEnd에서 로그인 성공/실패 여부 관련 없이 로그인 실패 알림(Login.vue)
 ```
 alert("로그인 실패 알림")
 ```
@@ -59,6 +66,7 @@ package는 controller 위치
 ```
 .paths(PathSelectors.ant("/account/**"))
 ```
+
 
 
 
