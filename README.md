@@ -12,7 +12,7 @@
 ![IMG](front-sk/img/와이어프레임1.jpg)
 
 - 와이어프레임 수정안
-- 
+
 ![IMG](front-sk/img/와이어프레임2.jpg)
 
 ### 3. FrontEnd 화면 
